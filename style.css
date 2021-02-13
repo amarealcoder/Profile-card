@@ -1,6 +1,84 @@
+*{
+    margin: auto 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+body{
+    background-color: hsl(185, 75%, 39%);  
+    background-image: 
+        url("images/bg-pattern-top.svg"),  
+        url("images/bg-pattern-bottom.svg");  
+    background-repeat: no-repeat;
+    /* background-size: 250px 400px, 250px 400px; background size is used to resize an svg image. The first two numbers (bearing height and width) are for the first image while the last two are for the last image*/
+    background-position: 
+        right 50vw bottom 25vh, 
+        left 45vw top 45vh; /*The background position is positioned on the vh & vw to position the images off the viewport*/
+    background-repeat: no-repeat, no-repeat;
+}
+body #card-container{
+    margin-top: 100px;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+body #card-content{
+    background-color: #f1f1f1; 
+    border-radius: 15px;
+    filter: drop-shadow(0 5mm 3rem hsl(185, 75%, 25%)); 
+}
+body #card-content .card-pix{
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+body #card-content .profile-pix{
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    /* margin-top: calc(-48px - 5px);   This calculated negative margin can be represented same as -53, used to bring the image up though I used -55 instead*/
+    margin-top: -55px;
+    margin-left: 127px;
+    position: relative;  /* The relative poistion was used to make the image come on top of other elements */
+}
+body #card-header .card-header-content{
+    text-align: center;
+    line-height: 1.75em;
+    margin-top: 13px;
+}
+h4{
+    color: hsl(229, 23%, 23%);
+}
+.data{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#card-log{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 16vh;
+    border-top: 0.01em solid hsl(227, 44%, 89%);
+   
+}
+.stats{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
 .attribution { 
-    font-size: 11px; text-align: center;
+    margin-top: 70px; 
+    font-size: 11px; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.075em;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%);
+    color: hsl(229, 39%, 84%);
 }
